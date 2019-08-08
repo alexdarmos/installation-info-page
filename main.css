@@ -1,0 +1,133 @@
+@import url("https://use.typekit.net/hkf6inh.css");
+
+.container {
+    /* width: 100%;
+    height: 400px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner {
+    background: url('assets/snobalt-dyno-60.gif');
+    position: relative;
+    height: 150px;
+    max-width: 1600px;
+    margin: 0 auto;
+    background-position: 0%;
+    background-position: 0% 64%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 7px 7px -2px rgba(0,0,0,0.32);
+
+}
+
+.shadow-cover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: black;
+    opacity: .5;
+}
+
+.banner-text {
+    color: white;
+    font-size: 13px;
+    position: absolute;
+    z-index: 5;
+    transform: scale(1.5, 1.5);
+    opacity: .7;
+    font-family: pirulen, sans-serif;
+    padding: 10px;
+    border: solid 1px #e10600;
+    /* justify-self: center; */
+    align-self: center;
+    margin: 0 auto;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    box-shadow: 0px 7px 7px -2px rgba(0,0,0,0.32);
+    padding: 10px;
+    align-items: center;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    /* border: solid 1px black; */
+    margin: 5px 0px;
+    padding: 10px;
+    width: calc(100 - 10px);
+}
+
+.testimonial-id {
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonial-review {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.testimonial-review > h4,p {
+    margin:0;
+}
+
+.photo-gallery-container {
+    display: flex;
+    margin-top: 25px;
+    flex-direction: column;
+    width: 100%;
+    box-shadow: 0px 7px 7px -2px rgba(0,0,0,0.32);
+
+}
+
+.gallery-row {
+    display: flex;
+    width: inherit;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.image-long {
+    flex-basis: 60%;
+    height: 100px;
+    border:solid 1px white;
+    background:green;
+}
+
+.image-short {
+    flex-basis: 40%;
+    height: 100px;
+    border: solid 1px white;
+    background: yellow;
+}
+
+.fa-envelope {
+    font-size: 20px;
+    color: #bebebe;
+    padding: 10px;
+    /* border: solid 1px #bebebe; */
+    border-radius: 50%;
+    margin: 25px;
+    box-shadow: 0px 7px 7px -2px rgba(0,0,0,0.32);
+}
+
+.fa-star {
+    color: gold;
+}
+
+@media only screen and (min-width: 768px) {
+
+}
