@@ -1,5 +1,9 @@
 @import url("https://use.typekit.net/hkf6inh.css");
 
+ul {
+    list-style-type: none;
+}
+
 .container {
     /* width: 100%;
     height: 400px; */
@@ -7,6 +11,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 14px;
+
 }
 
 .banner {
@@ -49,10 +55,18 @@
     margin: 0 auto;
 }
 
+.fa-envelope {
+    font-size: 20px;
+    color: #bebebe;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 25px;
+    box-shadow: 0px 7px 7px -2px rgba(0,0,0,0.32);
+}
+
 .testimonial-container {
     display: flex;
     flex-direction: column;
-    font-size: 12px;
     box-shadow: 0px 7px 7px -2px rgba(0,0,0,0.32);
     padding: 10px;
     align-items: center;
@@ -61,10 +75,9 @@
 .testimonial {
     display: flex;
     flex-direction: column;
-    /* border: solid 1px black; */
     margin: 5px 0px;
     padding: 10px;
-    width: calc(100 - 10px);
+    width: calc(100% - 10px);
 }
 
 .testimonial-id {
@@ -82,13 +95,16 @@
     margin:0;
 }
 
+.fa-star {
+    color: gold;
+}
+
 .photo-gallery-container {
     display: flex;
     margin-top: 25px;
     flex-direction: column;
     width: 100%;
     box-shadow: 0px 7px 7px -2px rgba(0,0,0,0.32);
-
 }
 
 .gallery-row {
@@ -114,18 +130,78 @@
     background: yellow;
 }
 
-.fa-envelope {
-    font-size: 20px;
-    color: #bebebe;
-    padding: 10px;
-    /* border: solid 1px #bebebe; */
-    border-radius: 50%;
-    margin: 25px;
-    box-shadow: 0px 7px 7px -2px rgba(0,0,0,0.32);
+.image-1 {
+    background: url('assets/ecotec-dyno-day-small.jpg');
+    background-size:cover;
+    background-position: 0%;
 }
 
-.fa-star {
-    color: gold;
+.image-2 {
+    background: url('assets/brandon-working-small.jpg');
+    background-size:cover;
+    background-position: 0%;
+}
+
+.image-3 {
+    background: url('assets/TimATS3-small.jpg');
+    background-size:cover;
+    background-position: 0%;
+}
+
+.image-4 {
+    background: url('assets/Wbody52-small.jpg');
+    background-size:cover;
+    background-position: 0%;
+}
+
+.image-5 {
+    background: url('assets/ecotec-dyno-day-2-small.jpg');
+    background-size:cover;
+    background-position: 0%;
+}
+
+.image-6 {
+    background: url('assets/AlWorking-small.jpg');
+    background-size:cover;
+    background-position: 0%;
+}
+
+
+#contact-container {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 7px 7px -2px rgba(0,0,0,0.32);
+    margin: 25px 0px 25px 0px;
+    padding: 10px;
+    justify-content: center;
+    width: calc(100% - 20px);
+
+}
+
+.contact-sub-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+
+.contact-text {
+    /* flex-basis: 75%; */
+    margin: 0;
+}
+
+.contact-link {
+    /* flex-basis: 25%; */
+    margin:0 0 25px 0;
+}
+
+.contact-warranty {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:inherit;
+    padding: 0;
+    text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
