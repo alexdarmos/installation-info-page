@@ -5,4 +5,8 @@ $( () => {
             scrollTop: $("#contact-container").offset().top},
             'slow');
     })
+
+    $('.banner').lazy();
+
 })
+

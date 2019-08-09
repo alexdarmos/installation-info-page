@@ -1,4 +1,3 @@
-@import url("https://use.typekit.net/hkf6inh.css");
 
 ul {
     list-style-type: none;
@@ -14,7 +13,7 @@ ul {
 }
 
 .banner {
-    background: url('assets/snobalt-dyno-60.gif');
+    background: url('https://zzpstorage.s3.amazonaws.com/Public/snobalt-dyno-60.gif');
     position: relative;
     height: 150px;
     max-width: 1600px;
@@ -69,12 +68,17 @@ ul {
 .testimonial-container {
     display: flex;
     flex-direction: column;
+  	align-items: center;
     box-shadow: 0px 7px 7px -2px rgba(0,0,0,0.32);
     padding: 10px;
-    /* align-items: center; */
     width: 100%;
     width: calc( 100% - 20px);
     max-width: 1580px;
+}
+
+.testimonial-title {
+	align-self: center;
+  	font-size: 16px;
 }
 
 .testimonial {
@@ -92,6 +96,7 @@ ul {
 .testimonial-review {
     display: flex;
     flex-direction: column;
+   	max-width:950px;
     margin-top: 10px;
 }
 
@@ -107,7 +112,7 @@ ul {
     display: flex;
     margin-top: 25px;
     flex-direction: column;
-    width: 100%;
+    width: calc(100% - 20px);
     max-width: 1600px;
     box-shadow: 0px 7px 7px -2px rgba(0,0,0,0.32);
     height: 300px;
@@ -115,7 +120,6 @@ ul {
 
 .gallery-row {
     display: flex;
-    width: inherit;
     height: 33.33%;
 }
 
@@ -136,37 +140,37 @@ ul {
 }
 
 .image-1 {
-    background: url('assets/ecotec-dyno-day-small.jpg');
+    background: url('https://cdn.shopify.com/s/files/1/0022/0718/7055/files/ecotec-dyno-day-small.jpg');
     background-size:cover;
     background-position: 0%;
 }
 
 .image-2 {
-    background: url('assets/brandon-working-small.jpg');
+    background: url('https://cdn.shopify.com/s/files/1/0022/0718/7055/files/brandon-working-small.jpg');
     background-size:cover;
     background-position: 0%;
 }
 
 .image-3 {
-    background: url('assets/TimATS3-small.jpg');
+    background: url('https://cdn.shopify.com/s/files/1/0022/0718/7055/files/TimATS3-small.jpg');
     background-size:cover;
     background-position: 0%;
 }
 
 .image-4 {
-    background: url('assets/Wbody52-small.jpg');
+    background: url('https://cdn.shopify.com/s/files/1/0022/0718/7055/files/Wbody52-small.jpg');
     background-size:cover;
     background-position: 0%;
 }
 
 .image-5 {
-    background: url('assets/ecotec-dyno-day-2-small.jpg');
+    background: url('https://cdn.shopify.com/s/files/1/0022/0718/7055/files/ecotec-dyno-day-2-small.jpg');
     background-size:cover;
     background-position: 0%;
 }
 
 .image-6 {
-    background: url('assets/AlWorking-small.jpg');
+    background: url('https://cdn.shopify.com/s/files/1/0022/0718/7055/files/AlWorking-small.jpg');
     background-size:cover;
     background-position: 0%;
 }
@@ -207,6 +211,48 @@ ul {
     text-align: center;
 }
 
+.promo-text-container {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 20px);
+    max-width: 1580px;
+    padding: 10px;
+}
+
+.promo-text-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0px;
+    border-bottom: solid 1px #353535;
+    padding-bottom: 5px;
+}
+
+.promo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.fa-bolt {
+    color: #e10600;
+    font-size: 18px;
+}
+
+.fa-coins {
+    color: #ffc300;
+    font-size: 18px;
+}
+
+.fa-thumbs-up {
+    color: #00DBE1;
+    font-size: 18px;
+}
+
+.fa-gas-pump {
+    color: #bebebe;
+    font-size: 18px;
+}
+
 @keyframes bounce {
     0%   { transform: scale(1,1)      translateY(0); }
     10%  { transform: scale(1.1,.9)   translateY(0); }
@@ -240,10 +286,20 @@ ul {
 
     .fa-envelope {
         font-size: 40px;
+      	padding: 15px;
     }
 
     .container {
         font-size: 16px;
+    }
+
+    .testimonial-container {
+        align-items: initial;
+    }
+
+    .promo-text-row {
+        width: 900px;
+        align-self: center;
     }
 }
 
